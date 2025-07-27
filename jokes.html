@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heat Wave Advisory - Fun</title>
+</head>
+<body class="extreme">
+<div class="container">
+    <div class="header">
+        <nav class="nav-tabs">
+            <a class="nav-tab" href="index.html">Advisory</a>
+            <a class="nav-tab active" href="jokes.html">Fun</a>
+        </nav>
+    </div>
+
+    <div class="weather-info">
+        <div class="joke-card">
+            <h3 class="card-title">JOKES</h3>
+
+            <div style="text-align: center; margin-bottom: 16px;">
+                <button class="joke-button" onclick="getRandomJoke()">
+                    Tell me a joke
+                </button>
+            </div>
+
+            <div class="joke-text" id="jokeText">
+                <div style="color: rgba(255, 255, 255, 0.8);">
+                    Loading a joke...
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
