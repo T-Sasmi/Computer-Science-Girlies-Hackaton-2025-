@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batavia Weather</title>
+</head>
+<body>
+    <div class="container">
+        <h1>The Current Weather ☀️</h1>
+
+        <div class="loading" id="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>Getting the weather</p>
+        </div>
+
+        <div class="weather-info" id="weather-info">
+            <div class="time-card">
+                <ul id="time" class="time-display"></ul>
+                <div id="date" class="date-display"></div>
+            </div>
+
+            <div class="temp-card">
+                <ul id="temp" class="temp-display"></ul>
+                <div class="info-card">
+                    <div class="info-row">
+                        <span>Feels like:</span>
+                        <span id="feels-like">--°</span>
+                    </div>
+                    <div class="info-row">
+                        <span>Humidity:</span>
+                        <span id="humidity">--%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="status-card">
+                <ul id="currenttemps" class="status-message"></ul>
+            </div>
+
+            <div class="location-card">
+                <div id="location">Getting the location...</div>
+            </div>
+        </div>
+
+        <div class="error" id="error" style="display: none;">
+            <p>Unable to get weather data</p>
+            <button id="retry-btn" class="retry-btn">Try Again</button>
+        </div>
+    </div>
+    <div id="ellongandellad"></div>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "Example",
+  "description": "This is to display current loactions weather",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Example weather"
+    
+  },
+  "permissions":["geolocation"]
+}
